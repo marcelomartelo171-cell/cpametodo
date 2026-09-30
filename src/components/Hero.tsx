@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, Sparkles } from 'lucide-react';
+import heroTigrinho from '../assets/hero-tigrinho.png';
 
 export const Hero: React.FC = () => {
   const scrollToOffer = () => {
@@ -41,10 +42,17 @@ export const Hero: React.FC = () => {
           <div className="relative group max-w-xs sm:max-w-md lg:max-w-lg w-full">
             <div className="absolute inset-0 bg-red-600/20 blur-2xl rounded-2xl -z-10" />
             <img
-              src="https://i.postimg.cc/SxHwkcqW/20ead334d7e87e09fe391a676317fe50-(1).png"
+              src={heroTigrinho}
               alt="CPA Chinês"
               className="w-full h-auto object-contain mx-auto drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] filter hover:scale-[1.01] transition-transform duration-300"
               loading="eager"
+              decoding="async"
+              onError={(e) => {
+                const target = e.currentTarget as HTMLImageElement;
+                if (!target.src.includes('/hero-tigrinho.png')) {
+                  target.src = '/hero-tigrinho.png';
+                }
+              }}
             />
           </div>
         </div>
