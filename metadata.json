@@ -1,0 +1,6 @@
+{
+  "name": "CPA Chinês - Formação em Aquisição Digital",
+  "description": "Landing page de alta conversão para o treinamento CPA Chinês sobre o ecossistema e mecânica de aquisição digital e CPA no mercado asiático.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
